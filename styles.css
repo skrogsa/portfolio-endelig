@@ -10,28 +10,30 @@ body {
     height: 100vh;
 }
 
+/* Light mode on body */
+.light {
+    background-color: #fffcf7;
+    color: #000000;
+}
+
+/* Dark mode on body */
+.dark {
+    background-color: black;
+    color: white;
+}
+
 section {
     min-height: 100vh;
 }
 
-li {
-    list-style: none;
-}
+/* Legge til darkmode for ulike seksjonene */
+/* Forsiden, gråtone gradient */
+/* Lage fade in effekt på alle dark/light modes?*/
 
-header a {
-    text-decoration: none;
-    color:black;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #4a0672;
-    text-decoration: underline;
-    text-decoration-thickness: 0.3rem;
-}
 
 /*HEADER*/
+
+/* Header light mode */
 header {
         background-color: #ffd000;
         color: black;
@@ -39,6 +41,12 @@ header {
         padding: 0 2rem;
         position: sticky;
         top: 0;
+}
+
+/* Header dark mode */
+.darktwo {
+    background-color: #A64AC9;
+    color: white;
 }
 
 .navbar {
@@ -61,6 +69,49 @@ header {
     gap: 2rem;
 }
 
+li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #4a0672;
+    text-decoration: underline;
+    text-decoration-thickness: 0.3rem;
+}
+
+/* Button for dark light mode */
+
+#toggleButton {
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent!Important;
+    padding-right: 60px;
+}
+
+/* Button image that appears when in light mode */
+.lightfour {
+    background-image: url(images/night-mode.png);
+}
+
+/* Button image that appears when in dark mode */
+.darkfour {
+    background-image: url(images/brightness.png);
+}
+
+/* Button for drop down menu */
+
 #toggle_btn {
     background-size: contain;
     background-repeat: no-repeat;
@@ -74,7 +125,7 @@ header {
 }
 
 .burger {
-    background-image: url(images/menuw.png);
+    background-image: url(images/menu.png);
 }
 
 .close {
