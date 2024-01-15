@@ -34,7 +34,7 @@ section {
 /*HEADER*/
 
 /* Header light mode */
-header {
+.headerlight {
         background-color: #ffd000;
         color: black;
         margin: 0;
@@ -44,8 +44,8 @@ header {
 }
 
 /* Header dark mode */
-.darktwo {
-    background-color: #A64AC9;
+.headerdark {
+    background-color: #030300;
     color: white;
 }
 
@@ -75,16 +75,20 @@ li {
 
 header a {
     text-decoration: none;
-    color:black;
     font-size: 1rem;
     font-weight: bold;
 }
 
 header a:hover {
-    color: #4a0672;
     text-decoration: underline;
     text-decoration-thickness: 0.3rem;
 }
+
+/* 
+Få besøkte lenker til å være samme farge som om de ikke er besøkte
+header a:visited {
+    color: white;
+} */
 
 /* Button for dark light mode */
 
@@ -101,14 +105,15 @@ header a:hover {
 }
 
 /* Button image that appears when in light mode */
-.lightfour {
+.buttonlight {
     background-image: url(images/night-mode.png);
 }
 
 /* Button image that appears when in dark mode */
-.darkfour {
+.buttondark {
     background-image: url(images/brightness.png);
 }
+/* Gjøre brightness.png til samme lyse farge som tekst skal være? */
 
 /* Button for drop down menu */
 
@@ -178,9 +183,14 @@ section {
     color: #fdfdfd;
 }
 
-section#hero {
+.herolight {
     background-image: linear-gradient(to left bottom, #c0f7ff, #b2f8f1, #b1f8db, #bff5bf, #d7eea3, #e3d582, #eeb96c, #f59b65, #e26860, #c13765, #900b6d, #4a0672);
     color: black;
+}
+
+.herodark {
+    background-image: linear-gradient(to left bottom, #E7E7E7, #E2E2E2, #E0E0E0, #DFDFDF, #DFDFDF, #D0D0D0, #C0C0C0, #B0B0B0, #8C8C8C, #656565, #3E3E3E, #262626);
+    color: white;
 }
 
 h1 {
@@ -194,10 +204,13 @@ h1 {
 section#projects {
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
-    color: #242424;
     justify-content: start;
     padding-top: 15rem;
+}
+
+.projectslight {
+    background-color: #fafafa;
+    color: #242424;
 }
 
 #cards {
@@ -211,23 +224,29 @@ section#projects {
     border: 10px solid #4a0672;
     border-radius: 15%;
     padding: 5rem;
+    float: left;
+    width: 33.33%
 }
 
 #card2 {
     border: 10px solid #c13765;
     border-radius: 15%;
     padding: 5rem;
+    float: left;
+    width: 33.33%
 }
 
 #card3 {
     border: 10px solid #f59b65;
     border-radius: 15%;
     padding: 5rem;
+    float: left;
+    width: 33.33%
 }
 
 /* OM MEG */
 
-section#about {
+.aboutlight {
     background-color: #4a0672;
     color: #fafafa;
 }
@@ -239,11 +258,14 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        background-color: #b2f8f1;
-        color: black;
         margin: 0;
         padding: 2rem 2rem;
         font-size: small;
+}
+
+.footerlight {
+    background-color: #b2f8f1;
+    color: black;
 }
 
 

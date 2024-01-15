@@ -26,14 +26,14 @@ function darkMode() {
     let header = document.querySelector("header");
     console.log(header);
 
-    header.classList.add("darktwo");
+    header.classList.add("headerdark");
 
     let h1 = document.querySelector("h1");
     console.log(h1);
 
     h1.classList.add("darkthree");
 
-    toggleButton.classList.add("darkfour");
+    toggleButton.classList.add("buttondark");
 }
 
 let intervalId;
@@ -61,14 +61,19 @@ function darkLightMode() {
   let header = document.querySelector("header");
   console.log(header);
 
-  header.classList.toggle("darktwo");
+  header.classList.toggle("headerdark");
+
+  let hero = document.querySelector("#hero");
+  console.log(hero);
+
+  hero.classList.toggle("herodark");
 
   let h1 = document.querySelector("h1");
   console.log(h1);
 
   h1.classList.toggle("darkthree");
 
-  toggleButton.classList.toggle("darkfour");
+  toggleButton.classList.toggle("buttondark");
 }
 
 toggleButton.addEventListener("click", darkLightMode);
