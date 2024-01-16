@@ -205,7 +205,7 @@ section#projects {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding-top: 15rem;
+    padding-top: 5rem;
 }
 
 .projectslight {
@@ -242,6 +242,13 @@ section#projects {
     padding: 5rem;
     float: left;
     width: 33.33%
+}
+
+#pthumb {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 /* OM MEG */
