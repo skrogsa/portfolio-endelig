@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list app</title>
     <link rel="stylesheet" href="todolist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Gaegu:wght@700&display=swap" rel="stylesheet">
     <script src="todolist.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="todo-app">
-            <h2>To-Do <img src="todolist/icon.png" alt="icon"></h2>
+            <h2>TODO <img src="todolist/icon.png" alt="icon"></h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Write your text here and click 'Add'">
-                <button onclick="addTask()">Add</button>
+                <button onclick="addTask()">+</button>
             </div>
             <ul id="list-container">
                 <!-- <li class="checked">Task 1</li>
@@ -22,6 +25,7 @@
             </ul>
         </div>
         <p>Based on tutorial by <a href="https://youtu.be/G0jO8kUrg-I?si=6jPkkp5n1sX3eKFm">GreatStack</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Freepik - Flaticon</a></p>
     </div>
     <footer></footer>
 </body>

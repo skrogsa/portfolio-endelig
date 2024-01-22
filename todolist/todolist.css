@@ -1,35 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gaegu';
     box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background-color: #FFF28F;
     padding: 10px;
 }
 
 .todo-app {
     width: 100%;
-    max-width: 540px;
-    background: #fff;
+    max-width: 800px;
+    background: #06DCD4;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .todo-app h2 {
-    color: #002765;
+    color: #FFF28F;
+    font-size: 64px;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .todo-app h2 img {
-    width: 30px;
+    width: 64px;
     margin-left: 10px;
 }
 
@@ -37,7 +39,7 @@
     max-width: 500px;
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -48,7 +50,8 @@
     flex: 1;
     border: none;
     outline: none;
-    background: #edeef0;
+    background: transparent;
+    border-bottom: 5px solid #000;
     padding: 20px;
     font-weight: 14px;
 }
@@ -114,13 +117,13 @@ ul li span:hover{
 
 p {
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 a {
-    color:#fff;
+    color:#000;
 }
 
 a:visited {
-    color:#fff;
+    color:#000;
 }
