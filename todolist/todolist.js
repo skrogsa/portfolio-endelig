@@ -35,6 +35,7 @@ listContainer.addEventListener("click", function(e){
     }
 }, false);
 
+
 // The save data function saves the data in local storage on your device 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
@@ -50,6 +51,7 @@ showTask();
 
 
 
+
 // Noe eg kanskje vil se på å få til i fremtiden:
 
 
@@ -57,6 +59,7 @@ showTask();
 //button.addEventListener("keydown", function (addTask) {
 //    console.log("button is entered!");
 //  });
+//2. Javascript: Prøvde å legge til et ikon for redigering og en funksjon for å redigere elementene i listen, men var for mange problemer med koden til at jeg rakk å fikse. 
 
 // 2. CSS: Forsøkte å få iconet i overskriften til å være overlappende med den blå containeren, men fikk ikke til å gjøre det på en måte som var responsivt
 

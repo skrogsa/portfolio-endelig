@@ -1,7 +1,7 @@
 // DROP DOWN MENU - opens the drop down menu when clicking the bar icon and closes when clicking x icon
 
 const toggleBtn = document.querySelector("#toggle_btn") 
-const toggleBtnIcon = document.querySelector(".burger")
+const toggleBtnIcon = document.querySelector(".burgerlight")
 const dropDownMenu = document.querySelector(".dropdown_menu")
 
 toggleBtn.onclick = function () {
@@ -9,50 +9,18 @@ toggleBtn.onclick = function () {
     const isOpen = dropDownMenu.classList.contains("open")
     
     toggleBtnIcon.classList = isOpen
-        ? "close"
-        : "burger"
+        ? "closelight"
+        : "burgerlight"
 } 
 
-// DARKLIGHT-MODE - Changes darkmode automatically at set time or manually by user clicking togglebutton
-
-// Function that automatically turns on dark mode after 18
-// Dark mode function
-function darkMode() {
-    let body = document.querySelector("body");
-    console.log(body);
-
-    body.classList.add("dark");
-
-    let header = document.querySelector("header");
-    console.log(header);
-
-    header.classList.add("headerdark");
-
-    let h1 = document.querySelector("h1");
-    console.log(h1);
-
-    h1.classList.add("darkthree");
-
-    toggleButton.classList.add("buttondark");
-}
-
-let intervalId;
-
-// Check the time function - if the clock is 18, then switch to dark mode
-function checkTime() {
-  var d = new Date();
-  var hours = d.getHours();
-  var minutes = d.getMinutes();
-  if (hours >= 18 && minutes >= 0) {
-      darkMode();
-  }
-}
 
 // Function that changes light mode to dark mode by clicking a button/image
 
-function darkLightMode() {
-  let toggleButton = document.querySelector("#toggleButton");
+let toggleButton = document.querySelector("#toggleButton");
   console.log(toggleButton);
+
+function darkLightMode() {
+
   let body = document.querySelector("body");
   console.log(body);
 
@@ -73,15 +41,24 @@ function darkLightMode() {
 
   h1.classList.toggle("darkthree");
 
-  toggleButton.classList.toggle("buttondark");
+  let footer = document.querySelector("footer");
+    console.log(footer);
+
+  footer.classList.toggle("footerdark");
+
+  let about = document.querySelector("#about");
+  console.log(about);
+
+  about.classList.toggle("aboutdark");
+
+  let projects = document.querySelector("#projects");
+  console.log(projects);
+
+  projects.classList.toggle("projectsdark");
+
+  toggleBtnIcon.classList.toggle("burgerdark", body.classList.contains("dark"));
+
+  toggleButton.classList.toggle("buttondark", body.classList.contains("dark"));
 }
 
 toggleButton.addEventListener("click", darkLightMode);
-
-// Function that checks the time every second
-intervalId = setInterval(checkTime, 1000);
-
-// Function that prevents the page from automatically changing back to dark mode if the user changes to light mode after 18
-toggleButton.addEventListener("click", function() {
-  clearInterval(intervalId);
-});

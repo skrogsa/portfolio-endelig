@@ -26,27 +26,30 @@ section {
     min-height: 100vh;
 }
 
-/* Legge til darkmode for ulike seksjonene */
-/* Forsiden, gråtone gradient */
-/* Lage fade in effekt på alle dark/light modes?*/
-
-
 /*HEADER*/
 
 /* Header light mode */
 .headerlight {
-        background-color: #ffd000;
-        color: black;
+        background-color: var(--light-nav-footer);
+        color: var(--light-nav-text);
         margin: 0;
         padding: 0 2rem;
         position: sticky;
         top: 0;
 }
 
+.headerlight a:visited {
+    color: var(--light-nav-text);
+}
+
 /* Header dark mode */
 .headerdark {
     background-color: #030300;
-    color: white;
+    color: var(--dark-nav-text);
+}
+
+.headerdark a:visited {
+    color: var(--dark-nav-text);
 }
 
 .navbar {
@@ -69,6 +72,10 @@ section {
     gap: 2rem;
 }
 
+.navbar ul {
+    justify-content: center;
+}
+
 li {
     list-style: none;
 }
@@ -84,11 +91,6 @@ header a:hover {
     text-decoration-thickness: 0.3rem;
 }
 
-/* 
-Få besøkte lenker til å være samme farge som om de ikke er besøkte
-header a:visited {
-    color: white;
-} */
 
 /* Button for dark light mode */
 
@@ -113,7 +115,6 @@ header a:visited {
 .buttondark {
     background-image: url(images/brightness.png);
 }
-/* Gjøre brightness.png til samme lyse farge som tekst skal være? */
 
 /* Button for drop down menu */
 
@@ -129,14 +130,21 @@ header a:visited {
     display: none;
 }
 
-.burger {
-    background-image: url(images/menu.png);
+.burgerlight {
+    background-image: url(images/menulight.png);
 }
 
-.close {
-    background-image: url(images/close.png);
+.burgerdark {
+    background-image: url(images/menudark.png);
 }
 
+.closelight {
+    background-image: url(images/closelight.png);
+}
+
+.closedark {
+    background-image: url(images/closedark.png);
+}
 
 
 /* DROPDOWN MENU */
@@ -147,15 +155,14 @@ header a:visited {
     top: 60px;
     height: 0px;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(75, 49, 90, 0.2);
     backdrop-filter: blur(15px);
-    border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
 .dropdown_menu.open {
-    height: 240px;
+    height: 150px;
 }
 
 .dropdown_menu li {
@@ -180,17 +187,17 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fdfdfd;
+    color: var(--dark-nav-text);
 }
 
 .herolight {
-    background-image: linear-gradient(to left bottom, #c0f7ff, #b2f8f1, #b1f8db, #bff5bf, #d7eea3, #e3d582, #eeb96c, #f59b65, #e26860, #c13765, #900b6d, #4a0672);
-    color: black;
+    background: linear-gradient(182deg, #B32A67 8.81%, #EFB46B 38.83%, #DAE79A 61.59%, #B1F8E9 83.87%);
+    color: var(--blacktext);
 }
 
 .herodark {
-    background-image: linear-gradient(to left bottom, #E7E7E7, #E2E2E2, #E0E0E0, #DFDFDF, #DFDFDF, #D0D0D0, #C0C0C0, #B0B0B0, #8C8C8C, #656565, #3E3E3E, #262626);
-    color: white;
+    background: linear-gradient(180deg, #1C0C19 1.71%, #261825 33.96%, #3F303D 66.22%, #4F414E 98.48%);
+    color: var(--dark-nav-text);
 }
 
 h1 {
@@ -209,8 +216,13 @@ section#projects {
 }
 
 .projectslight {
-    background-color: #fafafa;
-    color: #242424;
+    background-color: var(--light-background);
+    color: var(--blacktext);
+}
+
+.projectsdark {
+    background-color: var(--dark-background);
+    color: var(--dark-nav-text);
 }
 
 #cards {
@@ -254,8 +266,13 @@ section#projects {
 /* OM MEG */
 
 .aboutlight {
-    background-color: #4a0672;
-    color: #fafafa;
+    background: linear-gradient(1deg, #B32A67 8.31%, #EFB46B 38.8%, #DAE79A 61.92%, #B1F8E9 84.54%);
+    color: var(--blacktext);;
+}
+
+.aboutdark {
+    background: linear-gradient(359deg, #1C0C19 0.54%, #261825 33.49%, #3F303D 66.43%, #4F414E 99.37%);
+    color:var(--dark-nav-text);
 }
 
 /* FOOTER */
@@ -271,8 +288,21 @@ footer {
 }
 
 .footerlight {
-    background-color: #b2f8f1;
-    color: black;
+    background-color: var(--light-nav-footer);
+    color: var(--light-nav-text);
+}
+
+.footerlight a:visited {
+    color: var(--light-nav-text);
+}
+
+.footerdark {
+    background-color: var(--dark-nav-footer);
+    color: var(--dark-nav-text);
+}
+
+.footerdark a:visited {
+    color: var(--dark-nav-text);
 }
 
 

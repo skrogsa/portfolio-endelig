@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio frontend- Silje</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="colors.css">
     <script src="script.js" defer></script>
 </head>
 <body class="light">
     <div>
     <header class="headerlight">
         <div class="navbar">
-            <div class="logo"><a href="#">Portfolio</a></div>
+            <!-- <div class="logo"><a href="#">Portfolio</a></div> -->
+            <button id="toggleButton" class="buttonlight">
+                <!--- <img id="buttonImage" src="images/night-mode.png" alt="button-png" /> -->
+             </button>
             <ul class="links">
                 <li><a href="#hero">Hjem</a></li>
                 <li><a href="#projects">Prosjekter</a></li>
                 <li><a href="#about">Om meg</a></li>
             </ul>
-            <button id="toggleButton" class="buttonlight">
-                <!--- <img id="buttonImage" src="images/night-mode.png" alt="button-png" /> -->
-             </button>
            <!-- <div class="toggle_btn">
                 <img src="images/menuw.png" alt="menubar" id="hamburger">
             </div> -->
-            <button id="toggle_btn" class="burger"></button>
+            <button id="toggle_btn" class="burgerlight"></button>
         </div>
 
         <div class="dropdown_menu">
@@ -85,7 +86,8 @@
 * Skrive tekst og fikse på oppsett.
 * Velge andre fonter
 * Lage noen illustrasjoner til forside og om meg sida?
-* Lage darkmode (velge farger for ulike seksjoner, header, footer og tekst)
+* Fikse at hamburgermenu ikon har dark mode versjoner.
 * Se at eg har lagt til forklarende kommentarer på alt.
+* Legge til i JS for darkmode å lagre preferansen med localstorage.
 * Finne på annet gøy hvis tid.
 -->
