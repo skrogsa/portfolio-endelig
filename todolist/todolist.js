@@ -48,19 +48,3 @@ function showTask(){
 showTask();
 
 
-
-
-
-
-// Noe eg kanskje vil se på å få til i fremtiden:
-
-
-// 1. Javascript: Prøvde å få til å legge til ting i li ved å trykke enter i tillegg til klikke på knapp
-//button.addEventListener("keydown", function (addTask) {
-//    console.log("button is entered!");
-//  });
-//2. Javascript: Prøvde å legge til et ikon for redigering og en funksjon for å redigere elementene i listen, men var for mange problemer med koden til at jeg rakk å fikse. 
-
-// 2. CSS: Forsøkte å få iconet i overskriften til å være overlappende med den blå containeren, men fikk ikke til å gjøre det på en måte som var responsivt
-
-

@@ -8,6 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Snake Game</title>
     <link rel="stylesheet" href="snake.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet">
     <script defer src="snake.js"></script>
 </head>
 <body>
@@ -16,15 +19,27 @@
             <h1 id="score">000</h1>
             <h1 id="highScore">000</h1>
         </div>
-        <div class="game-border-1">
-            <div class="game-border-2">
+        <!-- <div class="game-border-1"> -->
+            <!-- <div class="game-border-2"> -->
             <div class="game-border-3">
                 <div id="game-board"></div>
                 </div>
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
     <h1 id="instruction-text">Press spacebar to start the game</h1>
-    <img id="logo" src="/snake/snake/snake-game-ai-gen.png" alt="snake-logo" />
+    <img id="logo" src="/snake/snake/snake-logo.png" alt="snake-logo" />
+   
 </body>
 </html>
+
+<!-- Ting å kanskje endre/legge til i fremtiden:
+* Gjøre at slangen ikke kan gå tilbake på seg selv.
+* Gjøre at foodelement ikke kan genereres på slangen eller utenfor game-board (sistnevnte kan være fordi jeg byttet ut en kvadrat med et lengre bilde).
+* Gjøre at slangen ikke kan gå igjennom siden på foodelement uten å spise det.
+* Gjøre at spillet kan brukes på mobil og ikke bare desktop/PC.
+* Lage hode/øyne til slangen.
+* Legge til en "game over" bilde når en taper.
+* Lage en highscore tavle hvor en kan legge til navn.
+* Legge til lydeffekter/musikk.
+-->

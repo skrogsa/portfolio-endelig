@@ -4,12 +4,16 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: 'VT323', monospace;;
+    font-family: 'Skranji', system-ui;
+    background-image: url(snake/michael-benz-unsplash.jpg);
 }
 
-body,
+h1 {
+    font-size: 17px;
+}
+
 .snake {
-    background-color: #414141;
+    background-color: #53BFD6;
 }
 
 #game-board {
@@ -20,7 +24,7 @@ body,
     margin: 5px;
 }
 
-.game-border-1 {
+/* .game-border-1 {
     border: #595f43 solid 10px;
     border-radius: 30px;
     box-shadow: inset 0 0 0 10px #595f43;
@@ -30,18 +34,18 @@ body,
     border: #abb78a solid 8px;
     border-radius: 26px;
     box-shadow: inset 0 0 0 10px #abb78a;
-}
+} */
 
 .game-border-3 {
-    border: #8b966c solid 30px;
+    border: #3E6B80 solid 3px;
     border-radius: 20px;
-    box-shadow: inset 0 0 0 5px #8b966c;
+    box-shadow: inset 0 0 0 5px #3E6B80;
 }
 
 #instruction-text {
     position: absolute;
     top: 60%;
-    color: #333;
+    color: #53BFD6;
     width: 300px;
     text-align: center;
     text-transform: capitalize;
@@ -55,22 +59,22 @@ body,
 }
 
 #score {
-    color: #abb78a
+    color: #53BFD6;
 }
 
 #score, #highScore {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bolder;
     margin: 10px 0;
 }
 
 #highScore {
-    color: #d8ddca;
+    color: #53BFD6;
     display: none;
 }
 
 .game-border-3, #logo {
-    background-color: #c4cfa3;
+    background-color: #031D2B;
 }
 
 .snake {
@@ -78,8 +82,9 @@ body,
 }
 
 .food {
-    background-color: dedede;
-    border: #999 5px solid;
+    content: url(snake/viking-ship.png);
+    width: 30px;
+    height: 30px;
 }
 
 #logo {

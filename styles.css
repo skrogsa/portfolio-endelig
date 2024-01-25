@@ -106,14 +106,18 @@ header a:hover {
     padding-right: 60px;
 }
 
+#toggleButton:hover {
+    transform: scale(1.2);
+}
+
 /* Button image that appears when in light mode */
 .buttonlight {
-    background-image: url(images/night-mode.png);
+    background-image: url(images/dark-mode.png);
 }
 
 /* Button image that appears when in dark mode */
 .buttondark {
-    background-image: url(images/brightness.png);
+    background-image: url(images/light-mode.png);
 }
 
 /* Button for drop down menu */
@@ -292,12 +296,20 @@ footer {
     color: var(--light-nav-text);
 }
 
+.footerlight a {
+    color: var(--light-nav-text);
+}
+
 .footerlight a:visited {
     color: var(--light-nav-text);
 }
 
 .footerdark {
     background-color: var(--dark-nav-footer);
+    color: var(--dark-nav-text);
+}
+
+.footerdark a {
     color: var(--dark-nav-text);
 }
 
