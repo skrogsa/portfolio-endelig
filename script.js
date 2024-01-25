@@ -56,6 +56,16 @@ function darkLightMode() {
 
   projects.classList.toggle("projectsdark");
 
+  let details = document.querySelector("div");
+  console.log(details);
+
+  div.classList.toggle("detailsdark");
+
+  let card1 = document.querySelector("#card1");
+  console.log(card1);
+
+  card1.classList.toggle("carddark");
+
   toggleBtnIcon.classList.toggle("burgerdark", body.classList.contains("dark"));
 
   toggleButton.classList.toggle("buttondark", body.classList.contains("dark"));

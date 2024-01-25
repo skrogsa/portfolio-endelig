@@ -38,6 +38,10 @@ section {
         top: 0;
 }
 
+.headerlight a {
+    color: var(--light-nav-text);
+}
+
 .headerlight a:visited {
     color: var(--light-nav-text);
 }
@@ -213,9 +217,8 @@ h1 {
 /* PROSJEKTER */
 
 section#projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    display:grid;
+    place-items: center center;
     padding-top: 5rem;
 }
 
@@ -229,43 +232,76 @@ section#projects {
     color: var(--dark-nav-text);
 }
 
-#cards {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    padding-top: 5rem;
+.cardslight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
 }
 
-#card1 {
-    border: 10px solid #4a0672;
-    border-radius: 15%;
-    padding: 5rem;
-    float: left;
-    width: 33.33%
+.card {
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0, 0.18);
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
 }
 
-#card2 {
-    border: 10px solid #c13765;
-    border-radius: 15%;
-    padding: 5rem;
-    float: left;
-    width: 33.33%
+.cardlight {
+    background-color: var(--light-nav-text);
 }
 
-#card3 {
-    border: 10px solid #f59b65;
-    border-radius: 15%;
-    padding: 5rem;
-    float: left;
-    width: 33.33%
+.carddark {
+    background-color: var(--dark-nav-text);
 }
 
-#pthumb {
-    width: 100%;
-    height: auto;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+.card-img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
+
+.details {
+    padding: 20px 10px;
+}
+
+.details>h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.detailslight {
+    color: var(--blacktext);
+}
+
+.detailslight a {
+    color: var(--blacktext);
+}
+
+.detailslight a:visited {
+    color: var(--blacktext);
+}
+
+.detailsdark {
+    color: var(--dark-nav-text);
+}
+
+.detailsdark a {
+    color: var(--dark-nav-text);
+}
+
+.detailsdark a:visited {
+    color: var(--dark-nav-text);
+}
+
+.details>p {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
 
 /* OM MEG */
 
