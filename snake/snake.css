@@ -6,6 +6,8 @@ body {
     margin: 0;
     font-family: 'Skranji', system-ui;
     background-image: url(snake/michael-benz-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
